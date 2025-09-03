@@ -91,7 +91,7 @@ const seriesDetails = await xtream.getShow({showId: 789});
 //      release_date: "1980-09-28", episode_run_time: "60", ...},
 //   episodes: {"1": [{id: "123", episode_num: "1", title: "The Shores of the Cosmic Ocean", 
 //      plot: "...", release_date: "1980-09-28", duration: "01:00:00", 
-//      movie_image: "...", cover_big: "...", rating: 9.3, season: 1, ...}, ...]}}
+//      movie_image: "...", cover_big: "...", rating: 9.3, season: 1, ...}, ...]}} 
 
 // Generate stream URLs
 const channelUrl = xtream.getChannelUrl(123);
@@ -102,6 +102,7 @@ const movieUrl = xtream.getMovieUrl(456);
 
 const episodeUrl = xtream.getEpisodeUrl(789);
 // -> "http://example.com:8080/series/username/password/789.mp4"
+// -> "https://archive.org/details/CosmosAPersonalVoyage/1980+Cosmos+(A+Personal+Voyage)+-+Ep+01+The+Shores+of+the+Cosmic+Ocean.mp4"
 ```
 
 ## Configuration Options
